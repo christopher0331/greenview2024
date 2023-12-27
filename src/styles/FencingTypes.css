@@ -1,0 +1,323 @@
+.fences {
+    display: column;
+    flex-direction: row;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+.woodFencesParagraph {
+    padding: 50px 150px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    color: black;
+    height: 100px;
+    font-size: 3.2vw;    
+    background-color: rgba(169, 169, 169, 0.365);
+}
+
+.info {
+    display: flex;
+    font-size: 16px;
+    color: grey;
+    justify-content: center;
+    text-align: center;
+}
+
+.fencingUpperInformationBlock {
+    margin: 150px 50px;
+}
+
+.left {
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+}
+
+.right {
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-end;
+    background: whitesmoke;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.project1Text {
+    font-size: 18px;
+    margin-left: 5%;
+    padding: 10px 50px;
+}
+
+.project2Text {
+    margin-right: 5%;
+    font-size: 18px;
+    padding: 10px 50px;
+}
+
+.project1 {
+    position: relative;
+    top: 0;
+    left: 4%;
+    width: 350px;
+    height: 100%;
+    background: #000;
+    border: 3px solid black;
+}
+
+.project1 .image {
+    width: 340px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project1 .image img {
+    width: 340px;
+    height: 100%;
+    transition: .5s;
+}
+.project1:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);
+}
+.project1 .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: forestgreen;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(350px) rotateY(-90deg);
+}
+.project1:hover .details {
+    transform: perspective(350px) rotateY(0deg);
+}
+.project1 .details .center {
+    padding: 5px;
+    text-align: center;
+    background: whitesmoke;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.project1 .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.project1 .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.project1 .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+    font-size: 12px;
+}
+.project1 .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.project1 .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.project1 .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.project1 .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.project2 {
+    position: relative;
+    top: 0;
+    left: 4%;
+    width: 350px;
+    margin-right: 5%;
+    height: 100%;
+    background: #000;
+    border: 3px solid black;
+}
+.project2 .image {
+    width: 340px;
+    height: 100%;
+    overflow: hidden;
+}
+.project2 .image img {
+    width: 340px;
+    height: 100%;
+    transition: .5s;
+}
+.project2:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.project2 .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: forestgreen;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.project2:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.project2 .details .center {
+    padding: 5px;
+    text-align: center;
+    background: whitesmoke;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.project2 .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.project2 .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.project2 .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+    font-size: 12px;
+}
+.project2 .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.project2 .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.project2 .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.project2 .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+.lowerInformation {
+    margin: 50px 50px;
+}
+
+@media screen and (max-width: 800px){
+
+    .woodFencesParagraph {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 25px;
+        background: whitesmoke;
+        margin-bottom: 0px;
+    }
+    .project1 {
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        top: 0;
+        width: 250px;
+        height: 240px;
+        background: #000;
+        border: 3px solid black;
+    }
+    
+    .project1 .image {
+        width: 240px;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .project1 .image img {
+        width: 240px;
+        height: 100%;
+        transition: .5s;
+    }
+    
+    .project2 {
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        top: 0;
+        width: 250px;
+        height: 240px;
+        background: #000;
+        border: 3px solid black;
+    }
+
+        
+    .project2 .image {
+        width: 240px;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .project2 .image img {
+        width: 240px;
+        height: 100%;
+        transition: .5s;
+    }
+
+    .project1Text {
+        font-size: 18px;
+    }
+    .project2Text {
+        font-size: 18px;
+    }
+}
+
+
